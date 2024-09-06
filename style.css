@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px #000;
+  padding: 15px;
+}
+header p {
+  max-width: 35ch;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+section h2,
+section p {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 0 20px #333;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+section p {
+  max-width: 70ch;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  font-family: cursive;
+}
