@@ -7,16 +7,18 @@
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  height: 100vh;
+  min-height: 100vh;
   gap: 1rem;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
 }
 
 header {
   text-align: center;
 }
 
-main {
+article {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
@@ -29,6 +31,7 @@ section {
 }
 
 footer {
+  margin-top: auto;
   text-align: center;
   padding: 20px;
   background-color: seagreen;
