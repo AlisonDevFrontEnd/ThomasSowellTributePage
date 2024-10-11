@@ -5,13 +5,20 @@
 }
 
 body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  gap: 1rem;
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 10px;
+}
+
+.site {
+  display: grid;
+  grid-template-rows: auto 1r auto;
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+:where(body) {
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 header {
@@ -31,7 +38,6 @@ section {
 }
 
 footer {
-  margin-top: auto;
   text-align: center;
   padding: 20px;
   background-color: seagreen;
